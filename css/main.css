@@ -1,0 +1,161 @@
+/* ESTILOS PARA HEADER */
+#MenuNavegacion {
+    margin-right: 10%; /* Ajusta según necesites */
+}
+
+/* ESTILOS DEL MAIN */
+main h1{
+    font-size: 3vw;
+}
+
+main h2{
+    font-size: 2vw;
+}
+
+main p{
+    font-size: 1vw;
+}
+
+
+/* ESTILOS INDEX */
+.portada_index {
+    position: relative;
+    display: flex; 
+    flex-direction: column; /* Alinea los elementos en una columna */
+    gap: 15px; /* Espacio entre elementos */
+}
+
+main section img {
+    width: 99vw;
+    object-fit: cover;
+}
+
+.container_slogan {
+    position: absolute; /* para poner sobre la imagen */
+    justify-content: left;
+    width: 60%;
+    bottom: 25%; /* separar del borde de abajo de la imagen */
+    left: 20px;
+    color: white
+}
+
+.container_slogan h1 {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.container_slogan p {
+    font-size: 2.5vw;
+}
+
+
+/* ESTILO PAGINA NUESTRO EQUIPO */
+.nombre_pagina {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.container_titular {
+    display: flex;
+    justify-content: center; /* Centra el div en la página */
+    align-items: center; /* Para centrar verticalmente el div */
+    width: 70%;
+    margin: 0 auto; /* Centra el contenedor en la página */
+
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+}
+
+.container_titular div {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra la imagen y los textos */
+    text-align: center; /* Asegura que los textos estén centrados */
+    gap: 10px; /* Espaciado entre los elementos */
+}
+
+.container_titular img {
+    max-width: 100%; /* Evita que la imagen se salga del contenedor */
+    height: auto;
+}
+
+.container_equipo{
+    display: grid;
+    width: 70%;
+    margin: 20px auto;
+    gap: 20px;
+    justify-items: center;
+    justify-content: space-between;
+
+    text-align: center; /* Para centrar el texto */
+}
+
+.container_equipo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.miembro_equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+
+
+@media (min-width: 768px) {
+
+    .container_titular{
+        width: 25%;
+    }
+
+    .container_equipo{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+}
+
+/* ESTILOS DEL FOOTER */
+footer{
+    text-align: center;
+    background-color: #005eb8;
+}
+
+footer p {
+    color: white;
+}
+
+.container_logos_footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.container_logos_footer img {
+    max-width: 20%;
+    height: auto;
+    margin: 10px;
+}
+
+.container_logos_footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.container_logos_footer a span{
+    display: none; /* Oculta el texto por defecto */
+}
+
+@media (min-width: 768px) { /* A partir de 768px de ancho */
+    .container_logos_footer a span {
+        display: inline; /* Muestra el texto */
+    }
+}
