@@ -1,4 +1,7 @@
 /* ESTILOS PARA HEADER */
+.container_navegacion{
+    background-color: #005eb8;
+}
 #MenuNavegacion {
     margin-right: 10%; /* Ajusta según necesites */
 }
@@ -15,7 +18,6 @@ main h2{
 main p{
     font-size: 1vw;
 }
-
 
 /* ESTILOS INDEX */
 .portada_index {
@@ -140,6 +142,29 @@ main section img {
     .text1 { grid-area: text1; }
     .text2 { grid-area: text2; }
     .img2 { grid-area: img2; }
+}
+
+/* ESTILOS PAGINA NUESTRO SERVICIO */
+.container_servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+    width: 90%;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding-bottom: 20px; /* Espacio para separar del footer */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.elemento_servicio {
+    display: flex;
+    flex-direction: column; /* Para que los elementos estén en columna */
+    align-items: center; /* Centra la imagen y los textos */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.elemento_servicio img {
+    max-width: 100%; /* Evita que la imagen se salga del contenedor */
+    height: auto;
 }
 
 /* ESTILO PAGINA NUESTRO EQUIPO */
