@@ -107,11 +107,39 @@ main section img {
     display: flex;
     flex-direction: column; /* Para que los elementos estén en columna */
     align-items: center; /* Centra la imagen y los textos */
+    padding: 5vh;
 }
 
-.elementos_nosotros image {
-    max-width: 80%; /* Evita que la imagen se salga del contenedor */
+.container_elementos_nosotros {
+    width: 90%;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding-bottom: 10vh;
+}
+
+.container_elementos_nosotros div img{
+    max-width: 100%;
     height: auto;
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+}
+
+.container_elementos_nosotros p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+@media (min-width: 768px){
+    .container_elementos_nosotros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img1 text1"
+            "text2 img2";
+        gap: 5%;
+    }
+    .img1 { grid-area: img1; }
+    .text1 { grid-area: text1; }
+    .text2 { grid-area: text2; }
+    .img2 { grid-area: img2; }
 }
 
 /* ESTILO PAGINA NUESTRO EQUIPO */
