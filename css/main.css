@@ -21,21 +21,25 @@ main p{
 .portada_index {
     position: relative;
     display: flex; 
+    align-items: center;
     flex-direction: column; /* Alinea los elementos en una columna */
     gap: 15px; /* Espacio entre elementos */
 }
 
 main section img {
+    max-height: 90vh; /* Limita la imagen a la altura de la pantalla */
     width: 99vw;
-    object-fit: cover;
+
+    object-fit: cover; /* Recorta para llenar el contenedor sin deformarse */
+    display: block; 
 }
 
 .container_slogan {
     position: absolute; /* para poner sobre la imagen */
     justify-content: left;
     width: 60%;
-    bottom: 25%; /* separar del borde de abajo de la imagen */
-    left: 20px;
+    bottom: 10%; /* separar del borde de abajo de la imagen */
+    left: 5%;
     color: white
 }
 
@@ -47,6 +51,57 @@ main section img {
 .container_slogan p {
     font-size: 2.5vw;
 }
+
+.container_intro{
+    padding-top: 20px;
+}
+
+.intro {
+    width: 90%;
+    margin: 0 auto; /* Centra el div horizontalmente */
+    display: flex;
+    flex-direction: column; /* Para que quede en columna */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.intro p {
+    text-align: justify; /* Justifica el texto */
+}
+
+.iframe_mapa {
+    position: relative;
+    width: 90%; /* Ancho del contenedor */
+    padding-top: 56.25%; /* Proporción 16:9 (alto/ancho = 450/600) */
+    overflow: hidden;
+    margin: 0 auto; /* Centra el div horizontalmente */
+    display: flex;
+    justify-content: center;
+}
+
+.iframe_mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+    justify-content: center;
+    padding: 20px;
+}
+
+
+@media (min-width: 768px){
+    .container_intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+    }
+}
+
+
 
 
 /* ESTILO PAGINA NUESTRO EQUIPO */
@@ -126,6 +181,7 @@ main section img {
 footer{
     text-align: center;
     background-color: #005eb8;
+    padding: auto;
 }
 
 footer p {
@@ -157,5 +213,8 @@ footer p {
 @media (min-width: 768px) { /* A partir de 768px de ancho */
     .container_logos_footer a span {
         display: inline; /* Muestra el texto */
+    }
+    .container_logos_footer img {
+        max-width: 10%;
     }
 }
