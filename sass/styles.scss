@@ -1,0 +1,14 @@
+// SCSS GENERAL
+@use "general";
+
+
+// SCSS DE PAGINAS
+@use "pages/home";
+@use "pages/nosotros";
+@use "pages/servicios";
+@use "pages/equipo";
+@use "pages/form";
+
+//SCSS LAYOUT
+@use "layout/footer";
+@use "layout/navigation"; // SCSS MENU NAVEGACION

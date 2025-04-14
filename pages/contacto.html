@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="../css/main.css" rel="stylesheet">
     
     <title>Estudio Santarsiere</title>
 </head>
@@ -39,56 +39,55 @@
     <main>
         <h1>Contacto</h1>
 
-        <img src="../img/logo_whatsapp.png" alt="Logo de WhatsApp">
-        <p>011-5176-5556 </p>
-
-        <img src="../img/logo_telefono.png" alt="Logo telefonico">
-        <p>011 2120-5120</p>
-
-        <img src="../img/logo_email.png" alt="Logo e-Mail">
-        <a href="mailto:administracion@esantarsiere.com.ar">administracion@esantarsiere.com.ar</a>
-
-        <h2>Redes Sociales</h2>
-
-        <a href="https://www.facebook.com/santarsiereabogados">
-            <img src="../img/logo_facebook.png" alt="Logo de la plataforma Facebook que redirige a la pagina de Facebook del estudio">
-        </a>
-        Facebook: Estudio Santarsiere Abogados
-
-        <a href="https://www.instagram.com/esantarsiere/">
-            <img src="../img/logo_instagram.png" alt="Logo de la plataforma Facebook que redirige a la pagina de Facebook del estudio">
-        </a>
-        Facebook: Estudio Santarsiere Abogados
-
         <h2>¿Tenés alguna duda?</h2>
 
-        <form action="post">
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="firstname" name="nombre" placeholder="Ingrese su nombre aquí...">
+        <form class="formulario_contacto">
+            <div class="container__inputs">
+                <!-- Nombre -->
+                <label class="form__label" for="firstname">
+                    <input type="text" id="firstname" name="nombre" placeholder=" " required>
+                    <span class="placeholder__form">Ingrese su NOMBRE</span>
+                </label>
 
-            <label for="apellido">Apellido: </label>
-            <input type="text" id="lastname" name="apellido" placeholder="Ingrese su apellido aquí...">
+                <!-- Apellido -->
+                <label class="form__label" for="lastname">
+                    <input type="text" id="lastname" name="apellido" placeholder=" " required>
+                    <span class="placeholder__form">Ingrese su APELLIDO</span>
+                </label>
 
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email" placeholder="Ingrese su email aquí...">
+                <!-- Email -->
+                <label class="form__label" for="email">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <span class="placeholder__form">Ingrese su EMAIL</span>
+                </label>
 
-            <label for="telefono">Telefono: </label>
-            <input type="number" id="contacto" name="telefono" placeholder="Ingrese su telefono aquí...">
+                <!-- Teléfono -->
+                <label class="form__label" for="telefono">
+                    <input type="tel" id="telefono" name="telefono" placeholder=" " required>
+                    <span class="placeholder__form">Ingrese su TELÉFONO</span>
+                </label>
 
-            <label for="opcion">Metodo de contacto: </label>
-            <select>
-                <option value="WhatsApp">Seleccione una opcion</option>
-                <option value="WhatsApp">WhatsApp</option>
-                <option value="Llamda">Llamada</option>
-                <option value="eMail">eMail</option>
-            </select>
+                <!-- Método de contacto -->
+                <label class="form__label" for="metodo_contacto">
+                    <span class="placeholder__form">Método de contacto</span>
+                    <select id="metodo_contacto" name="metodo_contacto" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="Llamada">Llamada</option>
+                        <option value="Email">Email</option>
+                    </select>
+                </label>
 
-            <label for="Consulta">Consulta: </label>
-            <textarea id="Consulta" name="Consulta" rows="4"></textarea> 
-        
-            <input type="submit" value="Enviar">
+                <!-- Consulta -->
+                <label class="form__label" for="consulta">
+                    <textarea name="consulta" id="consulta" rows="4" placeholder=" " required></textarea>
+                    <span class="placeholder__form">Ingrese su CONSULTA</span>
+                </label>
+
+                <!-- Botón de envío -->
+                <input type="submit" value="Enviar" class="form__submit">
+            </div>
         </form>
-
     </main>
     <footer>
         <!-- Div para contener los logos de redes sociales  -->

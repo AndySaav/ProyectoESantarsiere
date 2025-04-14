@@ -1,0 +1,42 @@
+// ESTILOS DEL FOOTER
+
+footer{
+    text-align: center;
+    background-color: #005eb8;
+    margin-top: 2Vh;
+    p {
+        color: white;
+    }
+}
+
+
+.container_logos_footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.container_logos_footer img {
+    max-width: 20%;
+    height: auto;
+    margin: 10px;
+}
+
+.container_logos_footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.container_logos_footer a span{
+    display: none; /* Oculta el texto por defecto */
+}
+
+@media (min-width: 768px) { /* A partir de 768px de ancho */
+    .container_logos_footer a span {
+        display: inline; /* Muestra el texto */
+    }
+    .container_logos_footer img {
+        max-width: 10%;
+    }
+}

@@ -1,0 +1,132 @@
+@use "../abstracts/variables" as *; // Importar variables de SCSS
+
+body {
+    background-color: $color-background;
+    color: $color-principal-letra;
+    padding: 1rem;
+    h2 {
+        text-align: center;
+    }
+}
+
+// Formulario
+.formulario_contacto {
+    background-color: $color-form-background;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+.container__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form__label {
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+}
+
+// Estilo de los campos de entrada (input, textarea, select)
+.form__label input,
+.form__label textarea,
+.form__label select {
+    border: 2px solid $color-principal;
+    border-radius: 6px;
+    padding: 1rem 0.75rem 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: $color-secundario-letra;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form__label select {
+    padding-top: 1.2rem;
+}
+
+.form__label textarea {
+    resize: none;
+}
+
+// Placeholder dentro de los campos
+.placeholder__form {
+    position: absolute;
+    top: 1rem;
+    left: 0.75rem;
+    font-size: 1rem;
+    color: $color-placeholder;
+    background-color: $color-form-background;
+    padding: 0 0.25rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+// Efectos al hacer foco o al escribir en los campos
+.form__label input:focus + .placeholder__form,
+.form__label input:not(:placeholder-shown) + .placeholder__form,
+.form__label textarea:focus + .placeholder__form,
+.form__label textarea:not(:placeholder-shown) + .placeholder__form {
+    top: -0.6rem;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    color: $color-principal;
+    background-color: $color-form-background;
+}
+
+// Select
+form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    border: 2px solid $color-principal;
+    border-radius: 6px;
+    background-color: transparent;
+    color: $color-secundario-letra;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    :focus {
+        border-color: $color-hover;
+        background-color: $color-focus-background; // Fondo suave al estar en foco
+    }
+    option {
+        color: $color-secundario-letra;
+        background-color: #fff;
+    }
+        
+}
+
+form select option:checked {
+    background-color: $color-selected-option;
+    color: $color-selected-text;
+}
+
+form select:invalid {
+    color: #999;
+}
+
+// Estilo del botón de envío
+.form__submit {
+    background-color: $color-principal;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form__submit:hover {
+    background-color: $color-hover;
+    box-shadow: 0 0 8px rgba(0, 94, 184, 0.4);
+}
+

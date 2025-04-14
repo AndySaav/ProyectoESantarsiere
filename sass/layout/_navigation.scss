@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+
+.container_navegacion{
+    background-color: variables.$color-principal;
+}
+#MenuNavegacion, #MenuMobile {
+    margin-right: 10%; /* Ajusta el margen derehco */
+}
+

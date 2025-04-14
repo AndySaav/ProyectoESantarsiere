@@ -1,0 +1,77 @@
+@use "../abstracts/variables";
+// @use "../abstracts/mixins";
+
+
+.portada_index {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    gap: 15px; /* Espacio entre elementos */
+    img {
+        width: 99vw;
+        height: 99vh;
+        object-fit: cover;
+        display: block;
+    }
+    .container_slogan {
+        position: absolute; /* para poner sobre la imagen */
+        justify-content: left;
+        width: 60%;
+        bottom: 10%; /* separar del borde de abajo de la imagen */
+        left: 5%;
+        color: variables.$color-secundario-letra;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+    h1 {
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+.container_intro{
+    .intro{
+        width: 90%;
+        margin: 0 auto; /* Centra el div horizontalmente */
+        display: flex;
+        flex-direction: column; /* Para que quede en columna */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        text-align: center; /* Centra el texto */
+        p{
+            text-align: justify; /* Justifica el texto */
+        }
+    }
+    .iframe_mapa {
+        position: relative;
+        width: 90%; /* Ancho del contenedor */
+        padding-top: 56.25%; /* Proporción 16:9 (alto/ancho = 450/600) */
+        overflow: hidden;
+        margin: 0 auto; /* Centra el div horizontalmente */
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px){
+    .container_intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+    }
+}
