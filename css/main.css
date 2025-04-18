@@ -34,6 +34,7 @@ body main p {
   height: 99vh;
   object-fit: cover;
   display: block;
+  z-index: 1;
 }
 .portada_index .container_slogan {
   position: absolute; /* para poner sobre la imagen */
@@ -384,6 +385,7 @@ footer p {
 }
 .container_navegacion {
   background-color: #005eb8;
+  z-index: 3;
 }
 
 #MenuNavegacion, #MenuMobile {

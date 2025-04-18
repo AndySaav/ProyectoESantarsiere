@@ -8,11 +8,13 @@
     align-items: center;
     flex-direction: column; /* Alinea los elementos en una columna */
     gap: 15px; /* Espacio entre elementos */
+
     img {
         width: 99vw;
         height: 99vh;
         object-fit: cover;
         display: block;
+        z-index: 1;
     }
     .container_slogan {
         position: absolute; /* para poner sobre la imagen */
