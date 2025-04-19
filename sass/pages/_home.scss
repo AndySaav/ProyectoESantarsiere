@@ -14,7 +14,6 @@
         height: 99vh;
         object-fit: cover;
         display: block;
-        z-index: 1;
     }
     .container_slogan {
         position: absolute; /* para poner sobre la imagen */
@@ -22,16 +21,16 @@
         width: 60%;
         bottom: 10%; /* separar del borde de abajo de la imagen */
         left: 5%;
-        color: variables.$color-secundario-letra;
-        color: white;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     }
     h1 {
         font-size: 5vw;
         font-weight: bold;
+        color: variables.$color-secundario-letra;
     }
     p {
         font-size: 2.5vw;
+        color: variables.$color-secundario-letra;
     }
 }
 

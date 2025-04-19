@@ -34,7 +34,6 @@ body main p {
   height: 99vh;
   object-fit: cover;
   display: block;
-  z-index: 1;
 }
 .portada_index .container_slogan {
   position: absolute; /* para poner sobre la imagen */
@@ -42,16 +41,16 @@ body main p {
   width: 60%;
   bottom: 10%; /* separar del borde de abajo de la imagen */
   left: 5%;
-  color: white;
-  color: white;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 .portada_index h1 {
   font-size: 5vw;
   font-weight: bold;
+  color: white;
 }
 .portada_index p {
   font-size: 2.5vw;
+  color: white;
 }
 
 .container_intro .intro {
@@ -385,7 +384,6 @@ footer p {
 }
 .container_navegacion {
   background-color: #005eb8;
-  z-index: 3;
 }
 
 #MenuNavegacion, #MenuMobile {
