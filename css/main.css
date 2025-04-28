@@ -12,6 +12,9 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+body main {
+  flex-grow: 1;
+}
 body main h1 {
   font-size: 3vw;
 }
@@ -20,6 +23,13 @@ body main h2 {
 }
 body main p {
   font-size: 1vw;
+}
+
+.subtitulos {
+  font-size: 2vw;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .portada_index {
@@ -161,6 +171,13 @@ h1 {
   height: auto;
 }
 
+.nombre_area_legal {
+  font-size: 1.2rem; /* Tamaño de fuente grande */
+  text-align: center; /* Centra el texto */
+  margin: 20px; /* Espacio alrededor del título */
+  color: black; /* Color del texto */
+}
+
 .nombre_pagina {
   text-align: center;
   margin: 20px 0 20px 0;
@@ -174,6 +191,7 @@ h1 {
   border-radius: 10px; /* Bordes ligeramente redondeados */
 }
 .container_titular div {
+  margin: 0 auto; /* Centra el texto dentro del div */
   display: flex;
   flex-direction: column; /* Para que los elementos estén en columna */
   align-items: center; /* Centra la imagen y los textos */
@@ -210,7 +228,7 @@ h1 {
 
 @media (min-width: 768px) {
   .container_titular {
-    width: 30%;
+    width: 25%;
   }
   .container_equipo {
     width: 80%;
@@ -220,15 +238,6 @@ h1 {
     gap: 5vw;
   }
 }
-body {
-  background-color: #f8f8f4;
-  color: black;
-  padding: 1rem;
-}
-body h2 {
-  text-align: center;
-}
-
 .formulario_contacto {
   background-color: #fdfdfb;
   padding: 1.5rem;
@@ -258,7 +267,7 @@ body h2 {
   padding: 1rem 0.75rem 0.5rem;
   font-size: 1rem;
   background-color: transparent;
-  color: white;
+  color: black;
   outline: none;
   transition: border-color 0.3s ease;
 }
@@ -296,14 +305,12 @@ body h2 {
 
 form select {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   padding: 1rem 0.75rem;
   font-size: 1rem;
   border: 2px solid #005eb8;
   border-radius: 6px;
   background-color: transparent;
-  color: white;
+  color: black;
   outline: none;
   cursor: pointer;
   transition: border-color 0.3s ease, background-color 0.3s ease;
@@ -314,7 +321,7 @@ form select :focus {
   background-color: #e6f0ff;
 }
 form select option {
-  color: white;
+  color: black;
   background-color: #fff;
 }
 
@@ -384,6 +391,8 @@ footer p {
 }
 .container_navegacion {
   background-color: #005eb8;
+  margin: 0;
+  padding: 0;
 }
 
 #MenuNavegacion, #MenuMobile {

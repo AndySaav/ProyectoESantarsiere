@@ -11,6 +11,7 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
     border-radius: 10px; /* Bordes ligeramente redondeados */
     div {
+        margin: 0 auto; /* Centra el texto dentro del div */
         display: flex;
         flex-direction: column; /* Para que los elementos estén en columna */
         align-items: center; /* Centra la imagen y los textos */
@@ -54,7 +55,7 @@
 @media (min-width: 768px) {
 
     .container_titular{
-        width: 30%;
+        width: 25%;
     }
 
     .container_equipo{

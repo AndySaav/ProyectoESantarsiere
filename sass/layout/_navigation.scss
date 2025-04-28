@@ -2,6 +2,8 @@
 
 .container_navegacion{
     background-color: variables.$color-principal;
+    margin: 0;
+    padding: 0;
 }
 #MenuNavegacion, #MenuMobile {
     margin-right: 10%; /* Ajusta el margen derehco */

@@ -1,13 +1,5 @@
 @use "../abstracts/variables" as *; // Importar variables de SCSS
 
-body {
-    background-color: $color-background;
-    color: $color-principal-letra;
-    padding: 1rem;
-    h2 {
-        text-align: center;
-    }
-}
 
 // Formulario
 .formulario_contacto {
@@ -40,7 +32,7 @@ body {
     padding: 1rem 0.75rem 0.5rem;
     font-size: 1rem;
     background-color: transparent;
-    color: $color-secundario-letra;
+    color: $color-principal-letra;
     outline: none;
     transition: border-color 0.3s ease;
 }
@@ -81,14 +73,12 @@ body {
 // Select
 form select {
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     padding: 1rem 0.75rem;
     font-size: 1rem;
     border: 2px solid $color-principal;
     border-radius: 6px;
     background-color: transparent;
-    color: $color-secundario-letra;
+    color: $color-principal-letra;
     outline: none;
     cursor: pointer;
     transition: border-color 0.3s ease, background-color 0.3s ease;
@@ -98,7 +88,7 @@ form select {
         background-color: $color-focus-background; // Fondo suave al estar en foco
     }
     option {
-        color: $color-secundario-letra;
+        color: $color-principal-letra;
         background-color: #fff;
     }
         

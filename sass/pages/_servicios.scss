@@ -27,4 +27,9 @@ h1 {
     }
 }
 
-
+.nombre_area_legal {
+    font-size: 1.2rem; /* Tamaño de fuente grande */
+    text-align: center; /* Centra el texto */
+    margin: 20px; /* Espacio alrededor del título */
+    color: variables.$color-principal-letra; /* Color del texto */
+}	

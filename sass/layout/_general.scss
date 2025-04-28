@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *; // Importar variables de SCSS
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     main{
+        flex-grow: 1;
         h1{
             font-size: 3vw;
         }
@@ -23,4 +26,11 @@ body{
             font-size: 1vw;
         }
     }
+}
+
+.subtitulos{
+    font-size: 2vw;
+    color: $color-principal-letra;
+    margin-bottom: 1rem;
+    text-align: center;
 }
