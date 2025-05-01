@@ -4,7 +4,14 @@
     display: flex;
     flex-direction: column; /* Para que los elementos estén en columna */
     align-items: center; /* Centra la imagen y los textos */
-    padding: 5vh;
+    h1{
+        padding-top: 5vh;
+        padding-bottom: 0;
+    }
+    h2{
+        padding-bottom: 5vh;
+        font-size: 1.3vw;
+    }
 }
 
 .container_elementos_nosotros {

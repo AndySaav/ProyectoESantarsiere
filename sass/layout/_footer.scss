@@ -31,6 +31,21 @@ footer{
     display: none; /* Oculta el texto por defecto */
 }
 
+.container_direccion_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+        margin: 0;
+    }
+    .copyright {
+        font-size: 0.6em;
+        color: white;
+    }
+}
+
+
 @media (min-width: 768px) { /* A partir de 768px de ancho */
     .container_logos_footer a span {
         display: inline; /* Muestra el texto */

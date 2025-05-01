@@ -106,7 +106,14 @@ body main p {
   display: flex;
   flex-direction: column; /* Para que los elementos estén en columna */
   align-items: center; /* Centra la imagen y los textos */
-  padding: 5vh;
+}
+.portada_nosotros h1 {
+  padding-top: 5vh;
+  padding-bottom: 0;
+}
+.portada_nosotros h2 {
+  padding-bottom: 5vh;
+  font-size: 1.3vw;
 }
 
 .container_elementos_nosotros {
@@ -379,6 +386,20 @@ footer p {
 
 .container_logos_footer a span {
   display: none; /* Oculta el texto por defecto */
+}
+
+.container_direccion_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container_direccion_footer p {
+  margin: 0;
+}
+.container_direccion_footer .copyright {
+  font-size: 0.6em;
+  color: white;
 }
 
 @media (min-width: 768px) { /* A partir de 768px de ancho */
