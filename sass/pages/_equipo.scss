@@ -66,3 +66,18 @@
         gap: 5vw;
     }
 }
+
+@media (min-width: 768px) {
+
+    .container_titular{
+        width: 25%;
+    }
+
+    .container_equipo{
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        justify-content: space-between;
+        gap: 5vw;
+    }
+}

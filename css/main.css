@@ -160,8 +160,8 @@ h1 {
 
 .container_servicios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Dos columnas */
-  width: 90%;
+  grid-template-columns: repeat(1, 1fr); /* Una columnas */
+  width: 70%;
   margin: 0 auto; /* Centra el contenedor en la página */
   padding-bottom: 20px; /* Espacio para separar del footer */
   gap: 20px; /* Espacio entre los elementos */
@@ -185,6 +185,18 @@ h1 {
   color: black; /* Color del texto */
 }
 
+@media (min-width: 768px) {
+  .container_servicios {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    width: 80%;
+  }
+  .container_servicios .elemento_servicio:hover {
+    background-color: #005eb8; /* Color al hacer hover */
+  }
+  .container_servicios .elemento_servicio:hover .nombre_area_legal {
+    color: white; /* Color al hacer hover */
+  }
+}
 .nombre_pagina {
   text-align: center;
   margin: 20px 0 20px 0;

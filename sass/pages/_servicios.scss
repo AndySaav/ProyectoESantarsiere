@@ -9,8 +9,8 @@ h1 {
 
 .container_servicios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
-    width: 90%;
+    grid-template-columns: repeat(1, 1fr); /* Una columnas */
+    width: 70%;
     margin: 0 auto; /* Centra el contenedor en la página */
     padding-bottom: 20px; /* Espacio para separar del footer */
     gap: 20px; /* Espacio entre los elementos */
@@ -32,4 +32,18 @@ h1 {
     text-align: center; /* Centra el texto */
     margin: 20px; /* Espacio alrededor del título */
     color: variables.$color-principal-letra; /* Color del texto */
-}	
+}
+
+@media (min-width: 768px){
+    .container_servicios {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+        width: 80%;
+        .elemento_servicio:hover {
+            background-color: variables.$color-principal; /* Color al hacer hover */
+            .nombre_area_legal {
+                color: variables.$color-secundario-letra; /* Color al hacer hover */
+            }
+        }
+    }
+}
+
